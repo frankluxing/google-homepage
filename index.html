@@ -1,0 +1,75 @@
+<style>
+main {
+    font-family:Arial, Helvetica, sans-serif;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 8fr 8fr 1fr 1fr 1fr;
+    padding: 15px;
+    top: 0;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 5fr 1fr 1fr;
+    padding: 10px;
+    flex-shrink: 0;
+}
+.left{
+    justify-self: left;
+}
+.right {
+    justify-self: right;
+}
+img {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+form .buttons{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+#search {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 44px;
+    border-radius: 24px;
+    box-shadow: none;
+    border: 1px solid #dfe1e5;
+}
+</style>
+<main>
+<header>
+    <div id="about" class="left">About</div>
+    <div id="Store" class="left">Store</div>
+    <div id="Gmail" class="right">Gmail</div>
+    <div id="Images" class="right">Images</div>
+    <div id="drive"class="right">DRIVE</div>
+    <button id="sign-in" class="right">Sign In</button>
+</header>
+<body>
+    <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<br>
+
+    <form id="fields">
+    <input id="search" type="search" required>
+    <br>
+    <button id="google-search" class="buttons">Google Search</button>
+    <button id="im-feeling-lucky" class="buttons">I'm Feeling Lucky</button>
+</form>
+</body>
+<footer>
+    <div id="advertising" class="left">Advertising</div>
+    <div id="business" class="left">Business</div>
+    <div id="how-search-works" class="left">How Search works</div>
+    <div id="privacy" class="right">Privacy</div>
+    <div id="terms"class="right">Terms</div>
+    <div id="settings" class="right">Settings</div>
+</footer>
+</main>
